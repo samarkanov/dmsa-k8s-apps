@@ -18,3 +18,5 @@ spec:
         name: dmsa-simple-app
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: gcp-artifact-registry
