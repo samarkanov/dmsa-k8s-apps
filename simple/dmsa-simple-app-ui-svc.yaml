@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: dmsa-simple-app-ui
 spec:
+  type: NodePort
   ports:
   - port: 5000
     targetPort: 5000
