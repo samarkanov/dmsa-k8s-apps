@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define a route for the root URL ('/')
 @app.route('/')
 def hello_world():
-    return '<h1 style=\"color:#FF6347;\">Hello, World! Here is some good news for you...</h1>'
+    return '<h1 style=\"color:#FF6311;\">Hello, World! Here is some good news for you...ARHHH!</h1>'
 
 # Run the server
 if __name__ == '__main__':
