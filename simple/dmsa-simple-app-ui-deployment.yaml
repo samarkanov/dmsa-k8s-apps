@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: dmsa-simple-app
 spec:
-  replicas: 1
+  replicas: 3
   revisionHistoryLimit: 3
   strategy:
     type: RollingUpdate
