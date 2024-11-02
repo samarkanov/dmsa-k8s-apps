@@ -1,6 +1,6 @@
 all: run
 
-TAG := 0.0.3
+TAG := 0.0.4
 
 build:
 	docker build . -t dmsa-simple-app:$(TAG)
