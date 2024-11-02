@@ -19,4 +19,4 @@ spec:
         ports:
         - containerPort: 80
       imagePullSecrets:
-      - name: gcp-artifact-registry
+      - name: gcp-artifact-registry-secret

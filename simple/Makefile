@@ -18,3 +18,10 @@ sync-argo:
 
 port-forward:
 	kubectl port-forward svc/dmsa-simple-app-ui 5000:5000 --address 0.0.0.0
+
+create-k8s-secret:
+	kubectl create secret docker-registry gcp-artifact-registry-secret \
+  		--docker-server=https://europe-west1-docker.pkg.dev \
+  		--docker-username=_json_key \
+  		--docker-password="$(cat ~/.gcp/learning-281911-686008435ca5.json)" \
+  		--docker-email=samarkanov@gmail.com
