@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dmsa-simple-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: dmsa-simple-app
+  template:
+    metadata:
+      labels:
+        app: dmsa-simple-app
+    spec:
+      containers:
+      - image: europe-west1-docker.pkg.dev/learning-281911/dmsa-test/dmsa-simple-app:0.0.1
+        name: dmsa-simple-app
+        ports:
+        - containerPort: 80
